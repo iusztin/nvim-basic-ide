@@ -13,7 +13,6 @@ local setup = {
   window = {
     border = "rounded", -- none, single, double, shadow
   },
-  ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
 }
 
 local opts = {
