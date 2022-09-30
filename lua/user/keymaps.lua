@@ -52,8 +52,8 @@ keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
--- NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- File browser
+keymap("n", "<leader>e", ":Lf<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
