@@ -19,7 +19,7 @@ No guarantee of stability of features or non breaking changes.
 
 
 ```sh
-git clone https://github.com/LunarVim/nvim-basic-ide.git ~/.config/nvim
+git clone git@github.com:iusztin/nvim-basic-ide.git ~/.config/nvim
 ```
 
 ## Get healthy
