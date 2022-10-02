@@ -43,9 +43,6 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" } -- Autopairs, integrates with both cmp and treesitter
-  use { "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" }
-  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "88343753dbe81c227a1c1fd2c8d764afb8d36269" }
   use { "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" }
   use { "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
@@ -90,11 +87,24 @@ return packer.startup(function(use)
   use { "nvim-telescope/telescope.nvim", tag = "0.1.0" }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make', commit = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90" }
 
-  -- Treesitter
+  -- Text parsing
   use {
     "nvim-treesitter/nvim-treesitter",
     commit = "aebc6cf6bd4675ac86629f516d612ad5288f7868",
   }
+  use {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    commit = "e63c2ff8e38fad77299dd74e14c7c9360e1b3181",
+  }
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "88343753dbe81c227a1c1fd2c8d764afb8d36269" }
+
+  -- Text mutation
+  use {
+    "kylechui/nvim-surround",
+    commit = "17191679202978b1de8c1bd5d975400897b1b92d", -- v2.0-beta
+  }
+  use { "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" } -- Autopairs, integrates with both cmp and treesitter
+  use { "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", tag = "v0.5" }
