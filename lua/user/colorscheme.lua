@@ -1,3 +1,3 @@
-local colorscheme = "darkplus"
+local colorscheme = "nightfox"
 
 vim.cmd("colorscheme " .. colorscheme)
