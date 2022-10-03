@@ -1,6 +1,8 @@
-local actions = require "telescope.actions"
+local actions = require("telescope.actions")
+local telescope = require("telescope")
+local lga_actions = require("telescope-live-grep-args.actions")
 
-require("telescope").setup {
+telescope.setup {
   defaults = {
 
     prompt_prefix = " ",
@@ -17,6 +19,17 @@ require("telescope").setup {
       },
     },
   },
-}
 
-require('telescope').load_extension('fzf')
+  extensions = {
+    live_grep_args = {
+      auto_quoting = true,
+      default_mappings = { -- extend mappings
+        i = {
+          ["<C-i>"] = lga_actions.quote_prompt({ postfix = ' -ig ' }),
+        },
+      }
+    }
+  }
+}
+telescope.load_extension("live_grep_args")
+telescope.load_extension("fzf")

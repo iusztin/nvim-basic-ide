@@ -87,7 +87,8 @@ return packer.startup(function(use)
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim", tag = "0.1.0" }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make', commit = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90" }
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", commit = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90" }
+  use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "32b633b062d1168a2d18ad27994e5b4ef97f0a74" }
 
   -- Text parsing
   use {
