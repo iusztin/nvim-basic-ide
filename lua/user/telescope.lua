@@ -23,9 +23,10 @@ telescope.setup {
   extensions = {
     live_grep_args = {
       auto_quoting = true,
-      default_mappings = { -- extend mappings
+      default_mappings = {},
+      mappings = { -- extend mappings
         i = {
-          ["<C-i>"] = lga_actions.quote_prompt({ postfix = ' -ig ' }),
+          ["<C-f>"] = lga_actions.quote_prompt({ postfix = ' -ig ' }),
         },
       }
     }
