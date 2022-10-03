@@ -13,6 +13,7 @@ local servers = {
   "jsonls",
   "yamlls",
   "solargraph", -- Ruby
+  "gopls",
 }
 
 for _, server in pairs(servers) do
