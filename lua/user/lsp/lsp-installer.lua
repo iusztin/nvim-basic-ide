@@ -1,3 +1,4 @@
+-- FIXME: Avoid unmaintained nvim-lsp-installer: https://github.com/williamboman/nvim-lsp-installer
 require("nvim-lsp-installer").setup()
 local lspconfig = require("lspconfig")
 
