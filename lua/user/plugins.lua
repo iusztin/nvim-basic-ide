@@ -85,10 +85,12 @@ return packer.startup(function(use)
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
 
-  -- Telescope
+  -- Searching
   use { "nvim-telescope/telescope.nvim", tag = "0.1.0" }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", commit = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90" }
   use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "32b633b062d1168a2d18ad27994e5b4ef97f0a74" }
+  use { "junegunn/fzf", commit = "cefa6b9878b1c5e8228debfb74ad6e7f689f2077" }
+  use { "junegunn/fzf.vim", commit = "9ceac718026fd39498d95ff04fa04d3e40c465d7" }
 
   -- Text parsing
   use {
