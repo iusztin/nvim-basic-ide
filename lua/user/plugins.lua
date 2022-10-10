@@ -81,9 +81,12 @@ return packer.startup(function(use)
 
   -- LSP
   use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
-  use { "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" } -- simple to use language server installer
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
+
+  -- LSP installer
+  use { "williamboman/mason.nvim", commit = "d06095e26375fde04134adab2f2f5372e93d5dd8" }
+  use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
 
   -- Searching
   use { "nvim-telescope/telescope.nvim", tag = "0.1.0" }
@@ -123,7 +126,6 @@ return packer.startup(function(use)
   -- DAP
   use { "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" }
   use { "rcarriga/nvim-dap-ui", commit = "d76d6594374fb54abf2d94d6a320f3fd6e9bb2f7" }
-  use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
