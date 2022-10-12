@@ -54,6 +54,9 @@ return packer.startup(function(use)
   use { "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" }
   use("folke/which-key.nvim")
 
+  -- Session management
+  use { "Shatur/neovim-session-manager", commit = "4005dac93f5cd1257792259ef4df6af0e3afc213" }
+
   -- File browser
   use({
     "lmburns/lf.nvim",
