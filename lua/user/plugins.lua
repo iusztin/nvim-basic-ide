@@ -52,7 +52,7 @@ return packer.startup(function(use)
   use { "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" }
   use { "lukas-reineke/indent-blankline.nvim", version = "2.20" }
   use { "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" }
-  use("folke/which-key.nvim")
+  use { "folke/which-key.nvim", commit = "6885b669523ff4238de99a7c653d47b081b5506d" }
 
   -- Vim UI enhancements
   use { "stevearc/dressing.nvim", commit = "12b808a6867e8c38015488ad6cee4e3d58174182" }
