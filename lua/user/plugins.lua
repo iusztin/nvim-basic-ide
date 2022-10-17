@@ -100,6 +100,7 @@ return packer.startup(function(use)
   use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "32b633b062d1168a2d18ad27994e5b4ef97f0a74" }
   use { "junegunn/fzf", commit = "cefa6b9878b1c5e8228debfb74ad6e7f689f2077" }
   use { "junegunn/fzf.vim", commit = "9ceac718026fd39498d95ff04fa04d3e40c465d7" }
+  use { "ggandor/leap.nvim", commit = "a9d3232b178fddabb6660dc19abf40e05d6841b0" }
 
   -- Text parsing
   use {
