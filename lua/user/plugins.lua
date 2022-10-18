@@ -120,6 +120,11 @@ return packer.startup(function(use)
   }
   use { "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" } -- Autopairs, integrates with both cmp and treesitter
   use { "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" }
+  use {
+    'nmac427/guess-indent.nvim',
+    commit = "c37467baa1a51b74ed767cbe0540fce44e03d828",
+    config = function() require('guess-indent').setup {} end,
+  }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", tag = "v0.5" }
