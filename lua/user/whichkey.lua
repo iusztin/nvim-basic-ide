@@ -28,11 +28,10 @@ local mappings = {
   },
   ["e"] = { "<cmd>Lf<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
-  ["q"] = { "<cmd>q!<CR>", "Quit" },
+  ["q"] = { "<cmd>qall!<CR>", "Quit" },
   ["C"] = { "<cmd>%bd<CR>", "Close all buffers" },
   ["c"] = { "<cmd>bd<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
   f = {
     name = "Find",
@@ -40,7 +39,8 @@ local mappings = {
     t = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", "Live grep" },
     p = { "<cmd>Telescope projects<CR>", "Projects" },
     b = { "<cmd>Telescope buffers<CR>", "Buffers" },
-    g = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+    gb = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+    gf = { "<cmd>Telescope git_status<cr>", "Open changed file" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
@@ -59,15 +59,6 @@ local mappings = {
     D = { "<cmd>SessionManager delete_session<CR>", "Delete" },
   },
 
-  p = {
-    name = "Packer",
-    c = { "<cmd>PackerCompile<cr>", "Compile" },
-    i = { "<cmd>PackerInstall<cr>", "Install" },
-    s = { "<cmd>PackerSync<cr>", "Sync" },
-    S = { "<cmd>PackerStatus<cr>", "Status" },
-    u = { "<cmd>PackerUpdate<cr>", "Update" },
-  },
-
   g = {
     name = "Git",
     g = { "<cmd>LazyGit<CR>", "Lazygit" },
@@ -82,9 +73,6 @@ local mappings = {
       "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
       "Undo Stage Hunk",
     },
-    o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
     d = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
