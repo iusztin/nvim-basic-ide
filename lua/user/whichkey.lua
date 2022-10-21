@@ -22,16 +22,17 @@ local opts = {
 
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  ["b"] = {
-    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "Buffers",
-  },
   ["e"] = { "<cmd>Lf<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>qall!<CR>", "Quit" },
-  ["C"] = { "<cmd>%bd<CR>", "Close all buffers" },
   ["c"] = { "<cmd>bd<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+
+  b = {
+    name = "Buffers",
+    y = { "<cmd>let @+ = expand(\"%\")<CR>", "Yank relative path" },
+    C = { "<cmd>%bd<CR>", "Close all buffers" },
+  },
 
   f = {
     name = "Find",
