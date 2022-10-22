@@ -32,6 +32,7 @@ local mappings = {
     name = "Buffers",
     y = { "<cmd>let @+ = expand(\"%\")<CR>", "Yank relative path" },
     C = { "<cmd>%bd<CR>", "Close all buffers" },
+    s = { "<cmd>BufferLineSortByDirectory<CR>", "Sort buffers by directory" },
   },
 
   f = {
