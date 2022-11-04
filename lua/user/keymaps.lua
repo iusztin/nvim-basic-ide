@@ -46,6 +46,10 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+--- Command Mode
+-- Go to beginning of the line
+keymap("c", "<C-a>", "<Home>")
+
 -- Plugins --
 
 -- File browser
