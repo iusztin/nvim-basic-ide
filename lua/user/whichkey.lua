@@ -52,6 +52,7 @@ local mappings = {
     C = { "<cmd>Telescope commands<cr>", "Commands" },
     l = { "<cmd>Telescope resume<cr>", "Last search" },
     w = { "<cmd>Telescope grep_string<cr>", "Current word" },
+    ["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search current buffer" },
   },
 
   s = {
