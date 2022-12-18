@@ -33,6 +33,7 @@ local mappings = {
     y = { "<cmd>let @+ = expand(\"%\")<CR>", "Yank relative path" },
     C = { "<cmd>%bd<CR>", "Close all buffers" },
     s = { "<cmd>BufferLineSortByDirectory<CR>", "Sort buffers by directory" },
+    f = { "<cmd>Telescope buffers<CR>", "Find buffer" },
   },
 
   f = {
@@ -40,7 +41,6 @@ local mappings = {
     f = { "<cmd>Telescope find_files<CR>", "Find files" },
     t = { "<cmd>Telescope live_grep_args<CR>", "Live grep" },
     p = { "<cmd>Telescope projects<CR>", "Projects" },
-    b = { "<cmd>Telescope buffers<CR>", "Buffers" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
