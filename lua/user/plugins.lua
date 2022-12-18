@@ -95,7 +95,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
 
   -- Searching
-  use { "nvim-telescope/telescope.nvim", tag = "0.1.0" }
+  use { "nvim-telescope/telescope.nvim", commit = "cabf991b1d3996fa6f3232327fc649bbdf676496" }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", commit = "65c0ee3d4bb9cb696e262bca1ea5e9af3938fc90" }
   use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "32b633b062d1168a2d18ad27994e5b4ef97f0a74" }
   use { "junegunn/fzf", commit = "cefa6b9878b1c5e8228debfb74ad6e7f689f2077" }
