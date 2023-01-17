@@ -12,6 +12,7 @@ local servers = {
   "yamlls",
   "solargraph", -- Ruby
   "gopls",
+  "kotlin_language_server",
 }
 
 for _, server in pairs(servers) do
