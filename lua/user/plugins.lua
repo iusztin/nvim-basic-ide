@@ -130,7 +130,10 @@ return packer.startup(function(use)
     requires = { 'nvim-treesitter' },
     commit = "3203aa553217921fd4dcb79245f9df07278910b2",
     config = function()
-      require('treesj').setup({ max_join_length = 500 })
+      require('treesj').setup({
+        max_join_length = 500,
+        use_default_keymaps = false,
+      })
     end,
   })
 
