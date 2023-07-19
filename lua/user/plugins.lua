@@ -125,6 +125,14 @@ return packer.startup(function(use)
     commit = "c37467baa1a51b74ed767cbe0540fce44e03d828",
     config = function() require('guess-indent').setup {} end,
   }
+  use({
+    'Wansmer/treesj',
+    requires = { 'nvim-treesitter' },
+    commit = "3203aa553217921fd4dcb79245f9df07278910b2",
+    config = function()
+      require('treesj').setup({ max_join_length = 500 })
+    end,
+  })
 
   -- Git
   use { "lewis6991/gitsigns.nvim", tag = "v0.5" }
