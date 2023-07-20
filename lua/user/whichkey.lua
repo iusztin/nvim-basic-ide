@@ -118,6 +118,7 @@ local mappings = {
   t = {
     name = "Text",
     s = { "<cmd>TSJToggle<cr>", "Split/Join" },
+    S = { "<cmd>lua require('treesj').toggle({ split = { recursive = true } })<cr>", "Split/Join recursively" },
   },
 }
 
