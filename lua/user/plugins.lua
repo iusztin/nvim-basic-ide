@@ -131,7 +131,7 @@ return packer.startup(function(use)
     commit = "3203aa553217921fd4dcb79245f9df07278910b2",
     config = function()
       require('treesj').setup({
-        max_join_length = 500,
+        max_join_length = 5000,
         use_default_keymaps = false,
       })
     end,
