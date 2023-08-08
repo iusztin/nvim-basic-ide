@@ -34,6 +34,7 @@ local mappings = {
     C = { "<cmd>%bd<CR>", "Close all buffers" },
     s = { "<cmd>BufferLineSortByDirectory<CR>", "Sort buffers by directory" },
     f = { "<cmd>Telescope buffers<CR>", "Find buffer" },
+    ["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Find in current buffer" },
   },
 
   f = {
@@ -50,7 +51,6 @@ local mappings = {
     C = { "<cmd>Telescope commands<cr>", "Commands" },
     l = { "<cmd>Telescope resume<cr>", "Last search" },
     w = { "<cmd>Telescope grep_string<cr>", "Current word" },
-    ["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search current buffer" },
   },
 
   s = {
