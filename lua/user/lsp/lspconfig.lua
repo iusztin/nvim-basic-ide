@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local opts = {}
 local servers = {
@@ -18,7 +19,7 @@ local servers = {
 for _, server in pairs(servers) do
   opts = {
     on_attach = require("user.lsp.handlers").on_attach,
-    capabilities = require("user.lsp.handlers").capabilities,
+    capabilities = capabilities,
   }
 
   if server == "sumneko_lua" then
