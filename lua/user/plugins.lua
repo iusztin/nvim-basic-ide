@@ -105,7 +105,7 @@ return packer.startup(function(use)
   -- Text parsing
   use {
     "nvim-treesitter/nvim-treesitter",
-    commit = "aebc6cf6bd4675ac86629f516d612ad5288f7868",
+    version = "v0.9.0",
   }
   use {
     "nvim-treesitter/nvim-treesitter-textobjects",
