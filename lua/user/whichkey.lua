@@ -56,6 +56,7 @@ local mappings = {
   s = {
     name = "Session",
     f = { "<cmd>SessionManager load_session<CR>", "Find" },
+    c = { "<cmd>SessionManager load_current_dir_session<CR>", "Current dir" },
     l = { "<cmd>SessionManager load_last_session<CR>", "Last" },
     s = { "<cmd>SessionManager save_current_session<CR>", "Save" },
     D = { "<cmd>SessionManager delete_session<CR>", "Delete" },
