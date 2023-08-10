@@ -70,7 +70,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "4092905fc570a721128af73f6bf78e5d47f5edce" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
-  use { "EdenEast/nightfox.nvim", commit = "59c3dbcec362eff7794f1cb576d56fd8a3f2c8bb" }
+  use { "EdenEast/nightfox.nvim", version = "v3.5.1" }
   use { "ishan9299/nvim-solarized-lua", commit = "b5a77b50d1136ad4018d176722378506afee9d3a" }
 
   -- cmp plugins
