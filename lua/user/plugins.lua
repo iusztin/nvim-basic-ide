@@ -57,7 +57,7 @@ return packer.startup(function(use)
   use { "stevearc/dressing.nvim", commit = "12b808a6867e8c38015488ad6cee4e3d58174182" }
 
   -- Session management
-  use { "Shatur/neovim-session-manager", commit = "4005dac93f5cd1257792259ef4df6af0e3afc213" }
+  use { "Shatur/neovim-session-manager", commit = "4883372b1ef2bdcf4cbdac44c98d68c216914462" }
 
   -- File browser
   use({
