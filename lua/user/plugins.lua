@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use { "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" }
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use { "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" }
-  use { "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" }
+  use { "akinsho/toggleterm.nvim", commit = "12cba0a1967b4f3f31903484dec72a6100dcf515" }
   use { "ahmedkhalf/project.nvim", commit = "541115e762764bc44d7d3bf501b6e367842d3d4f" }
   use { "lukas-reineke/indent-blankline.nvim", version = "2.20" }
   use { "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" }
@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use({
     "lmburns/lf.nvim",
     requires = { "plenary.nvim", "toggleterm.nvim" },
-    commit = "05bacf60ac80dd079e2b8a353cd807a5cbedf73a",
+    commit = "5c1d8569d3a221fb3bbf497de3f2834f1db289e1",
   })
 
   -- Colorschemes
