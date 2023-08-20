@@ -85,7 +85,7 @@ return packer.startup(function(use)
   use { "rafamadriz/friendly-snippets", commit = "d27a83a363e61009278b6598703a763ce9c8e617" } -- a bunch of snippets to use
 
   -- LSP
-  use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
+  use { "neovim/nvim-lspconfig", commit = "67f151e84daddc86cc65f5d935e592f76b9f4496" } -- enable LSP
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "76f28e858f1caae87bfa45fb4fd09e4b053fc45b" } -- highlight & search word under cursor
 
