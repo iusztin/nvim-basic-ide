@@ -90,8 +90,8 @@ return packer.startup(function(use)
   use { "RRethy/vim-illuminate", commit = "76f28e858f1caae87bfa45fb4fd09e4b053fc45b" } -- highlight & search word under cursor
 
   -- LSP installer
-  use { "williamboman/mason.nvim", commit = "d06095e26375fde04134adab2f2f5372e93d5dd8" }
-  use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
+  use { "williamboman/mason.nvim", version = "v1.6.2" }
+  use { "williamboman/mason-lspconfig.nvim", version = "v1.12.0" }
 
   -- Searching
   use { "nvim-telescope/telescope.nvim", version = "v0.1.2" }
