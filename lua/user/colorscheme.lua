@@ -1,6 +1,9 @@
-local colorscheme = "darkplus"
+require('nightfox').setup({
+  options = {
+    dim_inactive = true, -- Dim inactive splits
+  }
+})
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  return
-end
+local colorscheme = "nightfox"
+
+vim.cmd("colorscheme " .. colorscheme)

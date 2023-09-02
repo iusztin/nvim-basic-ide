@@ -1,16 +1,12 @@
-local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then
-  return
-end
-
-local actions = require "telescope.actions"
+local actions = require("telescope.actions")
+local telescope = require("telescope")
+local lga_actions = require("telescope-live-grep-args.actions")
 
 telescope.setup {
   defaults = {
-
     prompt_prefix = " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    path_display = { "absolute" },
     file_ignore_patterns = { ".git/", "node_modules" },
 
     mappings = {
@@ -22,4 +18,19 @@ telescope.setup {
       },
     },
   },
+
+  extensions = {
+    live_grep_args = {
+      auto_quoting = true,
+      default_mappings = {},
+      mappings = { -- extend mappings
+        i = {
+          ["<C-f>"] = lga_actions.quote_prompt({ postfix = ' -ig ' }),
+        },
+      }
+    }
+  }
 }
+telescope.load_extension("live_grep_args")
+telescope.load_extension("fzf")
+telescope.load_extension("lazygit")
