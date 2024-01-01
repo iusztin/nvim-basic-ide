@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use({
     "lmburns/lf.nvim",
     requires = { "plenary.nvim", "toggleterm.nvim" },
-    commit = "5c1d8569d3a221fb3bbf497de3f2834f1db289e1",
+    commit = "69ab1efcffee6928bf68ac9bd0c016464d9b2c8b",
   })
 
   -- Colorschemes
