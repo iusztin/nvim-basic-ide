@@ -8,7 +8,7 @@ local setup = {
   },
   popup_mappings = {
     scroll_down = "<c-d>", -- binding to scroll down inside the popup
-    scroll_up = "<c-u>", -- binding to scroll up inside the popup
+    scroll_up = "<c-u>",   -- binding to scroll up inside the popup
   },
   window = {
     border = "rounded", -- none, single, double, shadow
@@ -22,7 +22,8 @@ local opts = {
 
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-  ["e"] = { "<cmd>Lf<cr>", "Explorer" },
+  e = { "<cmd>Neotree reveal float<cr>", "Explorer (Neotree)" },
+  E = { "<cmd>Lf<cr>", "Explorer (LF)" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>qall!<CR>", "Quit" },
   ["c"] = { "<cmd>bd<CR>", "Close Buffer" },
@@ -35,6 +36,7 @@ local mappings = {
     s = { "<cmd>BufferLineSortByDirectory<CR>", "Sort buffers by directory" },
     f = { "<cmd>Telescope buffers<CR>", "Find buffer" },
     ["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Find in current buffer" },
+    e = { "<cmd>Neotree float buffers<cr>", "Explorer" },
   },
 
   f = {
@@ -66,6 +68,7 @@ local mappings = {
     name = "Git",
     g = { "<cmd>LazyGit<CR>", "Lazygit" },
     f = { "<cmd>Telescope git_status<cr>", "Open changed file" },
+    e = { "<cmd>Neotree float git_status<cr>", "Explorer" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },

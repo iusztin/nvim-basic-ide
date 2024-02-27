@@ -65,6 +65,15 @@ return packer.startup(function(use)
     requires = { "plenary.nvim", "toggleterm.nvim" },
     commit = "69ab1efcffee6928bf68ac9bd0c016464d9b2c8b",
   })
+  use {
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    }
+  }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "4092905fc570a721128af73f6bf78e5d47f5edce" }
