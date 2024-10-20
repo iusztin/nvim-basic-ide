@@ -5,11 +5,10 @@ No guarantee of stability of features or non breaking changes.
 
 ## Requirements
 
-- https://github.com/neovim/neovim/releases/tag/v0.8.0
-- https://github.com/junegunn/fzf
-- https://github.com/BurntSushi/ripgrep
+- https://github.com/neovim/neovim/releases/tag/v0.10.0
 - https://github.com/jesseduffield/lazygit
-- https://github.com/gokcehan/lf
+- Luarocks due to https://lazy.folke.io/
+- gcc or clang and make due to https://github.com/nvim-telescope/telescope-fzf-native.nvim
 
 ## Optional
 

@@ -1,5 +1,3 @@
-local lualine = require("lualine")
-
 local diagnostics = {
   "diagnostics",
   sources = { "nvim_diagnostic" },
@@ -23,7 +21,7 @@ local spaces = function()
   return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
-lualine.setup {
+local opts = {
   options = {
     globalstatus = true,
     component_separators = { left = "", right = "" },
@@ -38,4 +36,12 @@ lualine.setup {
     lualine_y = { location },
     lualine_z = { "progress" },
   },
+}
+
+return {
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = opts
+  }
 }

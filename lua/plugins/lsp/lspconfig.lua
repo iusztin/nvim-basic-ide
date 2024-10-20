@@ -6,7 +6,7 @@ local servers = {
   "lua_ls",
   "cssls",
   "html",
-  "tsserver",
+  "ts_ls",
   "pyright",
   "bashls",
   "jsonls",
@@ -18,17 +18,17 @@ local servers = {
 
 for _, server in pairs(servers) do
   opts = {
-    on_attach = require("user.lsp.handlers").on_attach,
+    on_attach = require("plugins.lsp.handlers").on_attach,
     capabilities = capabilities,
   }
 
   if server == "lua_ls" then
-    local lua_ls_opts = require "user.lsp.settings.lua_ls"
+    local lua_ls_opts = require "plugins.lsp.settings.lua_ls"
     opts = vim.tbl_deep_extend("force", lua_ls_opts, opts)
   end
 
   if server == "pyright" then
-    local pyright_opts = require "user.lsp.settings.pyright"
+    local pyright_opts = require "plugins.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
   end
 
