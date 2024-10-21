@@ -19,14 +19,6 @@ return {
     opts = true,
   },
 
-  -- Sessions
-  {
-    "Shatur/neovim-session-manager",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    }
-  },
-
   -- File browsing
   {
     "nvim-neo-tree/neo-tree.nvim",
