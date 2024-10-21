@@ -36,9 +36,6 @@ return {
   },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 
-  -- Code awareness
-  { "nvim-treesitter/nvim-treesitter" },
-
   -- UI enhancements
   { "stevearc/dressing.nvim" },
 
