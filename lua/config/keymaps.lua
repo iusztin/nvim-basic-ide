@@ -1,6 +1,4 @@
--- Shorten function name
 local keymap = vim.keymap.set
--- Silent keymap option
 local opts = { silent = true }
 
 --Remap space as leader key
@@ -37,6 +35,9 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
+
+-- LSP
+keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
 
 -- Visual --
 -- Stay in indent mode
