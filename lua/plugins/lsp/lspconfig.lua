@@ -18,7 +18,6 @@ local servers = {
 
 for _, server in pairs(servers) do
   opts = {
-    on_attach = require("plugins.lsp.handlers").on_attach,
     capabilities = capabilities,
   }
 
