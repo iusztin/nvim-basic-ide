@@ -23,6 +23,9 @@ return {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
       snippets = { preset = 'luasnip' },
+      enabled = function()
+        return not vim.tbl_contains({ "markdown" }, vim.bo.filetype)
+      end,
     },
     opts_extend = { "sources.default" }
   }
