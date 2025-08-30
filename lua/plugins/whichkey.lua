@@ -16,7 +16,7 @@ local spec = {
   { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
   { "<leader>fC", "<cmd>Telescope commands<cr>", desc = "Commands" },
   { "<leader>fl", "<cmd>Telescope resume<cr>", desc = "Last search" },
-  { "<leader>fw", "<cmd>Telescope grep_string<cr>", desc = "Current word" },
+  { "<leader>fw", "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Current word" },
 
   -- Session
   { "<leader>sf", "<cmd>SessionManager load_session<CR>", desc = "Find" },
