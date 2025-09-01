@@ -41,3 +41,4 @@ vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.iskeyword:append("-")
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"
+vim.o.winborder = "single"
