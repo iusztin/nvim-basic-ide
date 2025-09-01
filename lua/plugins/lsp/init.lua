@@ -11,7 +11,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("plugins.lsp.lspconfig")
+      require("plugins.lsp.clients.lua_ls")
+      require("plugins.lsp.clients.pyright")
     end,
   },
 }
