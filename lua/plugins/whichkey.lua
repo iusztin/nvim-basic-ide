@@ -28,6 +28,7 @@ local spec = {
   -- Git
   { "<leader>gy", "<cmd>GitLink default_branch<CR>", desc = "Git link" },
   { "<leader>gf", "<cmd>Telescope git_status<CR>", desc = "Open changed file" },
+  { "<leader>ge", "<cmd>Neotree float git_status<cr>", desc = "Explore" },
 
   -- Text
   { "<leader>ts", "<cmd>TSJToggle<cr>", desc = "Split/Join" },
