@@ -17,8 +17,24 @@ return {
     -- use a release tag to download pre-built binaries
     version = '1.*',
     opts = {
-      completion = { documentation = { auto_show = true } },
-      keymap = { preset = 'super-tab' },
+      completion = {
+        list = {
+          selection = {
+            preselect = false,
+          },
+        },
+        documentation = {
+          auto_show = true,
+        },
+      },
+      keymap = {
+        preset = 'enter',
+        ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<S-Tab>'] = { 'show', 'select_prev', 'fallback' },
+
+        ['<Up>'] = { 'snippet_backward', 'fallback' },
+        ['<Down>'] = { 'snippet_forward', 'fallback' },
+      },
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
