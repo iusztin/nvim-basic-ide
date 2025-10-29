@@ -13,6 +13,7 @@ return {
     config = function()
       require("plugins.lsp.clients.lua_ls")
       require("plugins.lsp.clients.pyright")
+      require("plugins.lsp.clients.ruby_lsp")
     end,
   },
 }
