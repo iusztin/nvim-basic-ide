@@ -5,7 +5,7 @@ No guarantee of non breaking changes.
 
 ## Requirements
 
-- https://github.com/neovim/neovim/releases/tag/v0.11.0
+- https://github.com/neovim/neovim/releases/tag/v0.12.0
 - https://github.com/jesseduffield/lazygit
 - Luarocks for https://lazy.folke.io/
 - gcc or clang and make for https://github.com/nvim-telescope/telescope-fzf-native.nvim
