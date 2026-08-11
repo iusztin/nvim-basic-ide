@@ -31,7 +31,13 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<S-q>", function()
+  Snacks.bufdelete({ force = true })
+end, vim.tbl_extend("force", opts, { desc = "Force close buffer" }))
+
+-- Native comments
+keymap("n", "<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+keymap("x", "<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
