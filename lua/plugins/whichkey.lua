@@ -36,7 +36,7 @@ local spec = {
   { "<leader>tS", "<cmd>lua require('treesj').toggle({ split = { recursive = true } })<cr>", desc = "Split/Join recursively" },
 
   -- Buffers
-  { "<leader>by", "<cmd>let @+ = expand(\"%\")<CR>", desc= "Yank relative path" },
+  { "<leader>by", "<cmd>let @+ = expand(\"%:.\")<CR>", desc= "Yank relative path" },
   { "<leader>bC", function() Snacks.bufdelete.all() end, desc = "Close all buffers" },
   { "<leader>bs", "<cmd>BufferLineSortByDirectory<CR>", desc = "Sort buffers by directory" },
   { "<leader>bf", function() Snacks.picker.buffers() end, desc = "Find buffer" },
