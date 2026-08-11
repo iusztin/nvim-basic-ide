@@ -80,13 +80,8 @@ local spec = {
   { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Declarations" },
 }
 
-return {
-  "folke/which-key.nvim",
-  version = "3.*",
-  opts = {
+return function()
+  require("which-key").setup({
     spec = spec,
-  },
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
-  }
-}
+  })
+end

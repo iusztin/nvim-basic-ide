@@ -1,12 +1,5 @@
-return {
-  "folke/snacks.nvim",
-  version = "2.*",
-  lazy = false,
-  priority = 1000,
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
-  },
-  opts = {
+return function()
+  require("snacks").setup({
     explorer = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
@@ -14,5 +7,5 @@ return {
       enabled = true,
       modes = { "n" },
     },
-  },
-}
+  })
+end
