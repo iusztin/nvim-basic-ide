@@ -15,8 +15,8 @@ return function()
       ["<Tab>"] = { "select_next", "fallback" },
       ["<S-Tab>"] = { "show", "select_prev", "fallback" },
 
-      ["<Up>"] = { "snippet_backward", "fallback" },
-      ["<Down>"] = { "snippet_forward", "fallback" },
+      ["<Up>"] = { "select_prev", "snippet_backward", "fallback" },
+      ["<Down>"] = { "select_next", "snippet_forward", "fallback" },
     },
     sources = {
       default = { "lsp", "path", "snippets", "buffer" },
