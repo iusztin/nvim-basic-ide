@@ -3,6 +3,7 @@ return {
   { "nmac427/guess-indent.nvim" },
   {
     "kylechui/nvim-surround",
+    version = "4.*",
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
       "nvim-treesitter/nvim-treesitter",

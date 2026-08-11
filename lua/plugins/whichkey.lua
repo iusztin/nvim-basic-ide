@@ -82,6 +82,7 @@ local spec = {
 
 return {
   "folke/which-key.nvim",
+  version = "3.*",
   opts = {
     spec = spec,
   },
