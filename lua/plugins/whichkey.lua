@@ -4,6 +4,7 @@ local spec = {
   { "<leader>q", "<cmd>qall!<CR>", desc = "Quit" },
   { "<leader>c", function() Snacks.bufdelete() end, desc = "Close Buffer" },
   { "<leader>h", "<cmd>nohlsearch<CR>", desc = "Disable highlights" },
+  { "<leader>u", function() Snacks.picker.undo() end, desc = "Undo history" },
 
   -- Find
   { "<leader>ff", function() Snacks.picker.files() end, desc = "Find files" },
