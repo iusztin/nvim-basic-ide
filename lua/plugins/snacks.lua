@@ -1,5 +1,6 @@
 return function()
   require("snacks").setup({
+    bigfile = { enabled = true },
     explorer = { enabled = true },
     input = { enabled = true },
     picker = {
