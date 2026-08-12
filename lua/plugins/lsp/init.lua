@@ -6,9 +6,6 @@ return function()
   require("plugins.lsp.clients.ruby_lsp")
 
   require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "pyright" },
-    automatic_enable = false,
+    ensure_installed = { "lua_ls" },
   })
-
-  vim.lsp.enable({ "lua_ls", "pyright" })
 end
