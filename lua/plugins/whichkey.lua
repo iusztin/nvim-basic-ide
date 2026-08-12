@@ -31,6 +31,7 @@ local spec = {
   { "<leader>gf", function() Snacks.picker.git_status() end, desc = "Open changed file" },
   { "<leader>ge", function() Snacks.explorer() end, desc = "Explore" },
   { "<leader>gg", function() Snacks.lazygit() end, desc = "LazyGit" },
+  { "<leader>gp", function() Snacks.picker.gh_pr() end, desc = "GitHub pull requests" },
 
   -- Text
   { "<leader>ts", "<cmd>TSJToggle<cr>", desc = "Split/Join" },
