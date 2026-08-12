@@ -56,7 +56,7 @@ local spec = {
     desc = "Workspace Diagnostics",
   },
   { "<leader>lf","<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format" },
-  { "<leader>li","<cmd>LspInfo<cr>", desc = "Info" },
+  { "<leader>li","<cmd>checkhealth vim.lsp<cr>", desc = "Info" },
   { "<leader>lI","<cmd>LspInstall<cr>", desc = "Install" },
   { "<leader>lM","<cmd>Mason<cr>", desc = "Mason" },
   {
