@@ -52,7 +52,6 @@ local setup_modules = {
   "plugins.editor",
   "plugins.leap",
   "plugins.treesj",
-  "plugins.gitsigns",
   "plugins.bufferline",
   "plugins.completions",
   "plugins.lsp",
