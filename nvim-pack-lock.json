@@ -19,9 +19,9 @@
       "src": "https://github.com/lewis6991/gitsigns.nvim",
       "version": "2.0.0 - 3.0.0"
     },
-    "guess-indent.nvim": {
-      "rev": "84a4987ff36798c2fc1169cbaff67960aed9776f",
-      "src": "https://github.com/nmac427/guess-indent.nvim"
+    "indent-o-matic": {
+      "rev": "81fa0e03bd2615a23b23312512371a2fc47fc0a4",
+      "src": "https://github.com/Darazaki/indent-o-matic"
     },
     "leap.nvim": {
       "rev": "0d0549b13428855c063468a6935c18e933599a18",

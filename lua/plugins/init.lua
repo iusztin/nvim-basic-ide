@@ -19,7 +19,7 @@ vim.pack.add({
   -- Editor foundations
   { src = github("nvim-treesitter/nvim-treesitter"), version = "main" },
   { src = github("nvim-treesitter/nvim-treesitter-textobjects"), version = "main" },
-  github("nmac427/guess-indent.nvim"),
+  github("Darazaki/indent-o-matic"),
   { src = github("kylechui/nvim-surround"), version = major(4) },
   { src = codeberg("andyg/leap.nvim"), name = "leap.nvim" },
   github("Wansmer/treesj"),
